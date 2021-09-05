@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
-    <!-- revise path： journal output path-->
-    <property name="PATH" value="course-log/eureka" />
+    <property name="PATH" value="course-log/system" />
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
