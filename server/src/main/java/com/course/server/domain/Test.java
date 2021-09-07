@@ -1,7 +1,8 @@
-package com.course.system.domain;
+package com.course.server.domain;
 
 public class Test {
     private String id;
+
     private String name;
     private String test;
 
