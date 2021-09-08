@@ -6,6 +6,8 @@ create table `chapter` (
                            primary key (`id`)
 ) engine=innodb default charset=utf8mb4 comment='chapter';
 
+insert into `chapter` (id, course_id, name) values ('00000002', '00000000', 'Chapter One');
+insert into `chapter` (id, course_id, name) values ('00000003', '00000000', 'Chapter Two');
 
 drop table if exists `test`;
 create table `test` (
