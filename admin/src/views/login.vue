@@ -73,7 +73,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'login',
   mounted:function(){
@@ -82,7 +81,7 @@ export default {
   },
   methods:{
     login(){
-      this.$router.push("/admin")
+      this.$router.push("/welcome")
     }
   }
 }
