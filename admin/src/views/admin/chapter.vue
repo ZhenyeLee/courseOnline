@@ -89,9 +89,12 @@ export default {
   methods: {
     list() {
       let _this = this;
-      _this.$ajax.get('http://127.0.0.1:9000/business/admin/chapter/list').then((response)=>{
-        console.log("Chapter table：", response);
-        _this.chapters = response.data;
+      _this.$ajax.post('http://127.0.0.1:9000/business/admin/chapter/list', {
+        page: 2,
+        size: 2
+      }).then((response)=>{
+        console.log("Chapter table query：", response);
+        _this.chapters = response.data.list;
       })
     }
   }
